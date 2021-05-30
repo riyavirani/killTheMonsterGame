@@ -12,11 +12,11 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(3000, 800);
+  createCanvas(3000, 700);
   engine = Engine.create();
   world = engine.world;
 
-  ground = new Ground(600, 600, 1200, 20);
+  ground = new Ground(1500, 690, 3000, 20);
 
   hero = new Hero(400,800,250);
   rope = new Rope(hero.body, { x: 500, y: 50 });
